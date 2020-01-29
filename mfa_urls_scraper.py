@@ -1,27 +1,9 @@
 from selenium.webdriver import Chrome
 import time
 import os
-import json
-from shutil import copyfile
 import string
 import re
-
-def write_json_to_file(d, filename):
-    path = 'Desktop//учебка_ВШЭ//diploma_paper//' + filename
-    with open(path, 'w', encoding='utf-8') as f:
-        f.write(json.dumps(d, ensure_ascii=False, indent=4)) 
-        
-def get_json_from_file(filename):
-    path = 'Desktop//учебка_ВШЭ//diploma_paper//' + filename
-    with open(path, 'r', encoding='utf-8') as f:
-        d = json.loads(f.read(), object_hook=lambda d: {int(k) if k.lstrip('-').isdigit() else k: v for k, v in d.items()})
-    return d
-
-def update_json(d, filename):
-    copyfile('Desktop//учебка_ВШЭ//diploma_paper//' + filename, 
-             'Desktop//учебка_ВШЭ//diploma_paper//' + filename + '_backup.json')
-    with open('Desktop//учебка_ВШЭ//diploma_paper//' + filename, 'w', encoding='utf-8') as f:
-        f.write(json.dumps(d, ensure_ascii=False, indent=4)) 
+from json_functions import *
 
 def get_links(start_url):
     mfa_links = get_json_from_file('mfa_links.json')
@@ -29,19 +11,30 @@ def get_links(start_url):
     
     # open page 1 and count pages
     driver.get(start_url + '1')
-    time.sleep(3)
-    num_pages = int(driver.find_elements_by_css_selector('div.paginates > ul > li')[-2].text)
-    
+    time.sleep(5)
+    try:
+        num_pages = int(driver.find_elements_by_css_selector('div.paginates > ul > li')[-2].text)
+    except IndexError:
+        driver.get(start_url + '1')
+        time.sleep(10)
+        num_pages = int(driver.find_elements_by_css_selector('div.paginates > ul > li')[-2].text)
+
     # generate pages urls list
     pages = [start_url + str(i) for i in range(1, num_pages + 1)]
     
     # get links to texts from every page
     all_links = []
+    n = 0
     for page in pages:
-        driver.get(page)
-        time.sleep(3)
-        links = [link.get_attribute('href') for link in driver.find_elements_by_css_selector('a.anons-title')]
+        print('Working with page', n, 'out of', num_pages)
+        links = []
+        while len(links) == 0:
+            driver.get(page)
+            time.sleep(3)
+            links = [link.get_attribute('href') for link in driver.find_elements_by_css_selector('a.anons-title')]
+            print('Found', len(links), 'links on this page')
         all_links.extend(links)
+        n += 1
         
     # save scraped data to file    
     category = re.compile('/(\w+)\?').findall(start_url)[0]
