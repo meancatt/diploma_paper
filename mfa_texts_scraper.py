@@ -204,4 +204,4 @@ def write_texts_to_file(categories):
     
     driver.close()
 
-write_texts_to_file(['briefings'])
+write_texts_to_file(['comments'])
