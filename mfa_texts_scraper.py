@@ -14,7 +14,12 @@ def get_text_data(url, category, driver):
     time.sleep(3)
 
     # get text data from page
-    title = driver.find_elements_by_tag_name('h1')[2].text
+    headers = driver.find_elements_by_tag_name('h1')
+    title = ''
+    i = 0
+    while title in ['', 'Министерство иностранных дел Российской Федерации']:
+        title = headers[i].text
+        i += 1
     try:
         date = '-'.join(driver.find_element_by_css_selector('span.nowrap').text.split('-')[1:])
     except NoSuchElementException:
@@ -29,7 +34,7 @@ def get_text_data(url, category, driver):
         style = paragraph.get_attribute('style')
         if 'center' not in style and 'right' not in style:
             paragraphs_clean.append(paragraph.text)
-    text = '\n'.join(paragraphs_clean).strip('\n')
+    text = '\n'.join(paragraphs_clean).strip().strip('\n')
 
     # save scraped data to dict
     text_data['url'] = url
@@ -54,7 +59,11 @@ def write_texts_to_file(categories):
         n = 0
         for category_link in category_links:
             print('Working with link', n, 'out of', num_links)
-            text_data = get_text_data(category_link, category, driver)
+            try:
+                text_data = get_text_data(category_link, category, driver)
+            except NoSuchElementException:
+                time.sleep(60)
+                text_data = get_text_data(category_link, category, driver)
             category_texts.append(text_data)
             n += 1
 
@@ -64,4 +73,4 @@ def write_texts_to_file(categories):
     
     driver.close()
 
-#write_texts_to_file(['official_statements'])
+write_texts_to_file(['comments'])
