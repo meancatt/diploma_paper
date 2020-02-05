@@ -106,6 +106,7 @@ def parse_briefing(driver):
 
         if topics == []:
             topics = text.find_elements_by_css_selector('div')
+            topics = [topic for topic in topics if 'center' in topic.get_attribute('style')]
 
         if topics == []:
             topics = text.find_elements_by_css_selector('p')
@@ -126,7 +127,12 @@ def parse_briefing(driver):
         if paragraph != '' and re.search('к оглавлению', paragraph.lower()) == None:
             paragraphs_clean.append(paragraph)
 
-    start_indx = paragraphs_clean.index(topics_clean[0])
+    try:
+        start_indx = paragraphs_clean.index(topics_clean[0])
+    except ValueError:
+        paragraphs_clean = [paragraph.strip(' \n') for paragraph in text.text.split('\n')]
+        start_indx = paragraphs_clean.index(topics_clean[0])
+
     paragraphs_clean = paragraphs_clean[start_indx:]
     
     # parse paragraphs into topics texts
@@ -134,31 +140,36 @@ def parse_briefing(driver):
     indexes_to_skip = []
     for i in range(len(paragraphs_clean)):
         if i not in indexes_to_skip:
-            current_paragraph = paragraphs_clean[i]
-            next_paragraph = paragraphs_clean[i+1]
-            if current_paragraph in topics_clean:
-                if next_paragraph in topics_clean:
-                    print('Разъехался подзаг -- фиксю')
-                    topic = current_paragraph + ' ' + next_paragraph
-                    indexes_to_skip.append(i+1)
+            if i != len(paragraphs_clean) - 1:
+                current_paragraph = paragraphs_clean[i]
+                next_paragraph = paragraphs_clean[i+1]
+                if current_paragraph in topics_clean:
+                    if next_paragraph in topics_clean:
+                        print('Разъехался подзаг -- фиксю')
+                        topic = current_paragraph + ' ' + next_paragraph
+                        indexes_to_skip.append(i+1)
+                    else:
+                        topic = current_paragraph
+                        if i != 0:
+                            text_blocks.append(text_block) 
+                    text_block = {}
+                    text_block['type'] = 'speech'
+                    text_block['title'] = topic
+                    text_block['text'] = ''
+                elif (re.match('(Из ответов на вопросы[ А-ЯЁа-яёA-Za-z\.\(\)]*?:?|Вопрос[ А-ЯЁа-яёA-Za-z\.\(\)]*?:)', 
+                current_paragraph) == None or 'Из ответов на вопросы:' in paragraphs_clean[i+1:]):
+                    text_block['text'] = text_block['text'] + '\n' + current_paragraph
                 else:
-                    topic = current_paragraph
-                    if i != 0:
-                        text_blocks.append(text_block) 
-                text_block = {}
-                text_block['type'] = 'speech'
-                text_block['title'] = topic
-                text_block['text'] = ''
-            elif (re.match('(Из ответов на вопросы[ А-ЯЁа-яёA-Za-z\.\(\)]*?:?|Вопрос[ А-ЯЁа-яёA-Za-z\.\(\)]*?:)', 
-            current_paragraph) == None or 'Из ответов на вопросы:' in paragraphs_clean[i+1:]):
-                text_block['text'] = text_block['text'] + '\n' + current_paragraph
+                    text_blocks.append(text_block)
+                    if 'Из ответов на вопросы' in current_paragraph:
+                        text = '\n'.join(paragraphs_clean[i+1:])
+                    else:
+                        text = '\n'.join(paragraphs_clean[i:])
+                    break
             else:
+                text_block['text'] = text_block['text'] + '\n' + paragraphs_clean[i]
                 text_blocks.append(text_block)
-                if 'Из ответов на вопросы' in current_paragraph:
-                    text = '\n'.join(paragraphs_clean[i+1:])
-                else:
-                    text = '\n'.join(paragraphs_clean[i:])
-                break
+                text = ''
 
     if len(text_blocks) != len(topics_clean) and len(indexes_to_skip) == 0:
         print('Кривые подзаги ¯\_(ツ)_/¯')
@@ -180,17 +191,12 @@ def write_texts_to_file(categories):
         n = 0
         for category_link in category_links:
             print('Working with link', n, 'out of', num_links)
-            if n != 190:
-                try:
-                    text_data = get_text_data(category_link, category, driver)
-                except NoSuchElementException:
-                    time.sleep(60)
-                    text_data = get_text_data(category_link, category, driver)
-                category_texts.append(text_data)
-            else:
-                print('Ссылка не работает')
-
-            n += 1
+            try:
+                text_data = get_text_data(category_link, category, driver)
+            except NoSuchElementException:
+                time.sleep(60)
+                text_data = get_text_data(category_link, category, driver)
+            category_texts.append(text_data)
 
         # save category texts to dict & write changes to file
         mfa_texts[category] = category_texts
