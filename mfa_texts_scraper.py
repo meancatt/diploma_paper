@@ -197,6 +197,7 @@ def write_texts_to_file(categories):
                 time.sleep(60)
                 text_data = get_text_data(category_link, category, driver)
             category_texts.append(text_data)
+            n += 1
 
         # save category texts to dict & write changes to file
         mfa_texts[category] = category_texts
@@ -204,4 +205,8 @@ def write_texts_to_file(categories):
     
     driver.close()
 
+<<<<<<< HEAD
 write_texts_to_file(['comments'])
+=======
+write_texts_to_file(['minister_speeches'])
+>>>>>>> upd texts scraper & add all texts
