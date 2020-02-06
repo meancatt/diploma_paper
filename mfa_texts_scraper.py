@@ -205,8 +205,4 @@ def write_texts_to_file(categories):
     
     driver.close()
 
-<<<<<<< HEAD
-write_texts_to_file(['comments'])
-=======
 write_texts_to_file(['minister_speeches'])
->>>>>>> upd texts scraper & add all texts
