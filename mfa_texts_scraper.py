@@ -30,8 +30,17 @@ def get_text_data(url, category, driver):
     if (category != 'briefings' or 
     (category == 'briefings' and ('cовместный' in title.lower() or 'совместный' in title.lower() or 'внеочередной' in title.lower()))):
         paragraphs = driver.find_elements_by_css_selector('div.text.article-content > p')
+        wrong_parsing = True
+        for paragraph in paragraphs:
+            if paragraph.text != ' ':
+                wrong_parsing = False
+                break
         if paragraphs == []:
             paragraphs = driver.find_elements_by_css_selector('p.dxl-par')
+        if paragraphs == [] or wrong_parsing:
+            paragraphs = driver.find_elements_by_css_selector('div.text.article-content > div > p')
+        if paragraphs == []:
+            paragraphs = driver.find_elements_by_css_selector('div.text.article-content')
         paragraphs_clean = []
         for paragraph in paragraphs:
             style = paragraph.get_attribute('style')
@@ -174,6 +183,9 @@ def parse_briefing(driver):
     if len(text_blocks) != len(topics_clean) and len(indexes_to_skip) == 0:
         print('Кривые подзаги ¯\_(ツ)_/¯')
 
+    # rm empty values
+    text_blocks = [text_block for text_block in text_blocks if text_block['text'] != '']
+
     return text_blocks, text
 
 def write_texts_to_file(categories):
@@ -196,7 +208,9 @@ def write_texts_to_file(categories):
             except NoSuchElementException:
                 time.sleep(60)
                 text_data = get_text_data(category_link, category, driver)
-            category_texts.append(text_data)
+            text_data = {k: v for k, v in text_data.items() if v != ''}
+            if 'text' in text_data or 'text_blocks' in text_data:
+                category_texts.append(text_data)
             n += 1
 
         # save category texts to dict & write changes to file
@@ -204,5 +218,3 @@ def write_texts_to_file(categories):
         update_json(mfa_texts, 'mfa_texts.json')
     
     driver.close()
-
-write_texts_to_file(['minister_speeches'])
