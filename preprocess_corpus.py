@@ -1,7 +1,7 @@
 from json_functions import *
 import pandas as pd
-from pymystem3 import Mystem
-mystem = Mystem() 
+import pymorphy2
+morph = pymorphy2.MorphAnalyzer()
 
 mfa_texts = get_json_from_file('mfa_texts.json')
 
@@ -36,6 +36,12 @@ for category, texts in mfa_texts.items():
 df = pd.DataFrame(data, columns = ['title', 'date', 'category', 'subheading', 'text'])
 df.to_csv('mfa_texts_df.csv', sep='\t', encoding='utf-8')
 
+# function for updating mfa_texts dataframe
+
+def update_csv(df, filename):
+    copyfile(filename + '.csv', filename + '_backup.csv')
+    df.to_csv(filename + '.csv', sep='\t', encoding='utf-8')
+
 # functions for text preprocessing
 
 def get_all_texts(df):
@@ -47,12 +53,17 @@ def get_all_texts(df):
 def generate_symbols_to_del(text):
     symbols_to_del = []
     for symbol in set(text):
-        if symbol.isalpha() == False:
+        if symbol.isalpha() == False and symbol != ' ':
             symbols_to_del.append(symbol)
     return symbols_to_del
 
 def lemmatize(text):
-    return ''.join(mystem.lemmatize(text))
+    words = text.split()
+    lemmatized_text = []
+    for word in words:
+        word = morph.parse(word)[0].normal_form
+        lemmatized_text.append(word)
+    return ' '.join(lemmatized_text)
 
 def clean(text, symbols_to_del):
     for symbol_to_del in symbols_to_del:
@@ -60,7 +71,7 @@ def clean(text, symbols_to_del):
     text = ' '.join([symbol for symbol in text.split() if symbol != ' '])
     return text
 
-# symbols_to_del = generate_symbols_to_del(get_all_texts(df))
+#symbols_to_del = generate_symbols_to_del(get_all_texts(df))
     
 df['text_lemmatized'] = df['text'].apply(lemmatize)
-df.to_csv('mfa_texts_df.csv', sep='\t', encoding='utf-8')
+update_csv(df, 'mfa_texts_df')
