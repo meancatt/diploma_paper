@@ -35,6 +35,8 @@ for category, texts in mfa_texts.items():
 df = pd.DataFrame(data, columns = ['title', 'date', 'category', 'subheading', 'text'])
 df.to_csv('mfa_texts_df.csv', sep='\t', encoding='utf-8')
 
+print('Done with CSV')
+
 # lemmatize texts and save them to df   
-df['text_lemmatized'] = df['text'].apply(lemmatize)
+df['text_lemmatized'] = df['text'].apply(lemmatize_mystem)
 update_csv(df, 'mfa_texts_df')
