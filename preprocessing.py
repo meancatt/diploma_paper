@@ -13,7 +13,7 @@ def get_all_texts(df):
 def generate_symbols_to_del(text):
     symbols_to_del = []
     for symbol in set(text):
-        if symbol.isalpha() == False and symbol not in [' ', '-']:
+        if symbol.isalpha() == False and symbol not in [' ', '-', '«', '»']:
             symbols_to_del.append(symbol)
     return symbols_to_del
 
