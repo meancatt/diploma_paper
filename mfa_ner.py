@@ -1,5 +1,6 @@
 import spacy
 from working_with_files import *
+from preprocessing import *
 import pandas as pd
 
 def sort_by_official_dates(df):
@@ -30,12 +31,34 @@ def get_entities(text):
     ents = ''
     doc = model(text)
     for ent in doc.ents:
-        ents = ents + ent.text + '|' + ent.start_char + '|' + ent.end_char + '|' + ent.lemma_ + '|' + ent.label_ + '\n'
+        if ent.label_ in ['ORG', 'LOC', 'PER']:
+            ents = (ents + ent.text + '|' + str(ent.start_char) + '|' + str(ent.end_char) + '|' 
+            + ent.lemma_ + '|' + ent.label_ + '\n')
     return ents
 
-df = pd.read_csv('mfa_texts_df.csv', sep = '\t', encoding = 'utf-8')
-sorted_dfs = sort_by_official_dates(df)
+# df = pd.read_csv('mfa_texts_df.csv', sep = '\t', encoding = 'utf-8')
 
-model = spacy.load('ru2', disable=['tagger', 'parser', 'NER'])
-for df in sorted_dfs:
-    df['named_entities'] = df['text'].apply(get_entities)
+# model = spacy.load('ru2', disable=['tagger', 'parser', 'NER'])
+# df['named_entities'] = df['text'].apply(get_entities)
+
+# update_csv(df, 'mfa_texts_df')
+
+df = pd.read_csv('mfa_texts_df.csv', sep = '\t', encoding = 'utf-8')
+
+def update_lemmatization(named_entities):
+    entities = named_entities.split('\n')
+    entities_upd = []
+    for entity in entities:
+        entity_data = entity.split('|')
+        try:
+            lemma = lemmatize_mystem(entity_data[3])
+            entity_data_upd = entity_data[:3] + [lemma] + entity_data[4:]
+            entity_data_upd = '|'.join(entity_data_upd)
+            entities_upd.append(entity_data_upd)
+        except IndexError:
+            return float('nan')
+    return '\n'.join(entities_upd)
+
+df['named_entities'] = df['named_entities'].apply(update_lemmatization)
+
+update_csv(df, 'mfa_texts_df')
