@@ -3,49 +3,57 @@
         "country": "http://www.wikidata.org/entity/Q408",
         "countryLabel": "Австралия",
         "regionLabel": "МИКТА",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "австралия"
     },
     "http://www.wikidata.org/entity/Q40": {
         "country": "http://www.wikidata.org/entity/Q40",
         "countryLabel": "Австрия",
         "regionLabel": "Центральная Европа",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "австрия"
     },
     "http://www.wikidata.org/entity/Q227": {
         "country": "http://www.wikidata.org/entity/Q227",
         "countryLabel": "Азербайджан",
         "regionLabel": "Кавказ",
         "continentLabel": "Евразия",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "азербайджан"
     },
     "http://www.wikidata.org/entity/Q222": {
         "country": "http://www.wikidata.org/entity/Q222",
         "countryLabel": "Албания",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "албания"
     },
     "http://www.wikidata.org/entity/Q262": {
         "country": "http://www.wikidata.org/entity/Q262",
         "countryLabel": "Алжир",
         "regionLabel": "Северная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "алжир"
     },
     "http://www.wikidata.org/entity/Q2842000": {
         "country": "http://www.wikidata.org/entity/Q2842000",
         "countryLabel": "Амбазония",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "амбазония"
     },
     "http://www.wikidata.org/entity/Q916": {
         "country": "http://www.wikidata.org/entity/Q916",
         "countryLabel": "Ангола",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "ангола"
     },
     "http://www.wikidata.org/entity/Q228": {
         "country": "http://www.wikidata.org/entity/Q228",
         "countryLabel": "Андорра",
         "regionLabel": "Каталонские земли",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "андорра"
     },
     "http://www.wikidata.org/entity/Q781": {
         "country": "http://www.wikidata.org/entity/Q781",
@@ -54,7 +62,8 @@
             "Содружество наций",
             "Малые Антильские острова"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "антигуа и барбуда"
     },
     "http://www.wikidata.org/entity/Q414": {
         "country": "http://www.wikidata.org/entity/Q414",
@@ -63,7 +72,8 @@
             "Южная Америка",
             "Латинская Америка"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "аргентина"
     },
     "http://www.wikidata.org/entity/Q399": {
         "country": "http://www.wikidata.org/entity/Q399",
@@ -72,7 +82,8 @@
             "Передняя Азия",
             "Восточная Европа"
         ],
-        "continentLabel": "Евразия"
+        "continentLabel": "Евразия",
+        "countryLabelLemmatized": "армения"
     },
     "http://www.wikidata.org/entity/Q21203": {
         "country": "http://www.wikidata.org/entity/Q21203",
@@ -81,23 +92,27 @@
             "Острова ABC",
             "Нидерландские Антильские острова"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "аруба"
     },
     "http://www.wikidata.org/entity/Q889": {
         "country": "http://www.wikidata.org/entity/Q889",
         "countryLabel": "Афганистан",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "афганистан"
     },
     "http://www.wikidata.org/entity/Q778": {
         "country": "http://www.wikidata.org/entity/Q778",
         "countryLabel": "Багамские Острова",
         "regionLabel": "Карибы",
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "багамский остров"
     },
     "http://www.wikidata.org/entity/Q902": {
         "country": "http://www.wikidata.org/entity/Q902",
         "countryLabel": "Бангладеш",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "бангладеш"
     },
     "http://www.wikidata.org/entity/Q244": {
         "country": "http://www.wikidata.org/entity/Q244",
@@ -107,50 +122,58 @@
             "Наветренные острова"
         ],
         "continentLabel": "Северная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "барбадос"
     },
     "http://www.wikidata.org/entity/Q47588": {
         "country": "http://www.wikidata.org/entity/Q47588",
         "countryLabel": "Баскские земли",
-        "continentLabel":"Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "баскский земля"
     },
     "http://www.wikidata.org/entity/Q398": {
         "country": "http://www.wikidata.org/entity/Q398",
         "countryLabel": "Бахрейн",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "бахрейн"
     },
     "http://www.wikidata.org/entity/Q242": {
         "country": "http://www.wikidata.org/entity/Q242",
         "countryLabel": "Белиз",
         "regionLabel": "Центральная Америка",
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "белиз"
     },
     "http://www.wikidata.org/entity/Q184": {
         "country": "http://www.wikidata.org/entity/Q184",
         "countryLabel": "Белоруссия",
         "continentLabel": "Европа",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "белоруссия"
     },
     "http://www.wikidata.org/entity/Q31": {
         "country": "http://www.wikidata.org/entity/Q31",
         "countryLabel": "Бельгия",
         "regionLabel": "Союзники",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "бельгия"
     },
     "http://www.wikidata.org/entity/Q962": {
         "country": "http://www.wikidata.org/entity/Q962",
         "countryLabel": "Бенин",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "бенин"
     },
     "http://www.wikidata.org/entity/Q219": {
         "country": "http://www.wikidata.org/entity/Q219",
         "countryLabel": "Болгария",
         "regionLabel": "Восточная Европа",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "болгария"
     },
     "http://www.wikidata.org/entity/Q750": {
         "country": "http://www.wikidata.org/entity/Q750",
@@ -159,18 +182,21 @@
             "Южная Америка",
             "Латинская Америка"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "боливия"
     },
     "http://www.wikidata.org/entity/Q225": {
         "country": "http://www.wikidata.org/entity/Q225",
         "countryLabel": "Босния и Герцеговина",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "босния и герцеговина"
     },
     "http://www.wikidata.org/entity/Q963": {
         "country": "http://www.wikidata.org/entity/Q963",
         "countryLabel": "Ботсвана",
         "regionLabel": "Южная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "ботсвана"
     },
     "http://www.wikidata.org/entity/Q155": {
         "country": "http://www.wikidata.org/entity/Q155",
@@ -180,55 +206,64 @@
             "Латинская Америка"
         ],
         "continentLabel": "Южная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "бразилия"
     },
     "http://www.wikidata.org/entity/Q921": {
         "country": "http://www.wikidata.org/entity/Q921",
         "countryLabel": "Бруней",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "бруней"
     },
     "http://www.wikidata.org/entity/Q965": {
         "country": "http://www.wikidata.org/entity/Q965",
         "countryLabel": "Буркина-Фасо",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "буркина-фасо"
     },
     "http://www.wikidata.org/entity/Q967": {
         "country": "http://www.wikidata.org/entity/Q967",
         "countryLabel": "Бурунди",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "бурунди"
     },
     "http://www.wikidata.org/entity/Q917": {
         "country": "http://www.wikidata.org/entity/Q917",
         "countryLabel": "Бутан",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "бутан"
     },
     "http://www.wikidata.org/entity/Q686": {
         "country": "http://www.wikidata.org/entity/Q686",
         "countryLabel": "Вануату",
         "regionLabel": "Меланезия",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "вануату"
     },
     "http://www.wikidata.org/entity/Q237": {
         "country": "http://www.wikidata.org/entity/Q237",
         "countryLabel": "Ватикан",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "ватикан"
     },
     "http://www.wikidata.org/entity/Q145": {
         "country": "http://www.wikidata.org/entity/Q145",
         "countryLabel": "Великобритания",
         "regionLabel": "Европейский союз",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "великобритания"
     },
     "http://www.wikidata.org/entity/Q28": {
         "country": "http://www.wikidata.org/entity/Q28",
         "countryLabel": "Венгрия",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "венгрия"
     },
     "http://www.wikidata.org/entity/Q717": {
         "country": "http://www.wikidata.org/entity/Q717",
@@ -238,43 +273,50 @@
             "Латинская Америка"
         ],
         "continentLabel": "Южная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "венесуэла"
     },
     "http://www.wikidata.org/entity/Q574": {
         "country": "http://www.wikidata.org/entity/Q574",
         "countryLabel": "Восточный Тимор",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "восточный тимор"
     },
     "http://www.wikidata.org/entity/Q881": {
         "country": "http://www.wikidata.org/entity/Q881",
         "countryLabel": "Вьетнам",
         "regionLabel": "Юго-Восточная Азия",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "вьетнам"
     },
     "http://www.wikidata.org/entity/Q1000": {
         "country": "http://www.wikidata.org/entity/Q1000",
         "countryLabel": "Габон",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "габон"
     },
     "http://www.wikidata.org/entity/Q734": {
         "country": "http://www.wikidata.org/entity/Q734",
         "countryLabel": "Гайана",
         "regionLabel": "Южная Америка",
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "гайана"
     },
     "http://www.wikidata.org/entity/Q1005": {
         "country": "http://www.wikidata.org/entity/Q1005",
         "countryLabel": "Гамбия",
         "regionLabel": "Западная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "гамбия"
     },
     "http://www.wikidata.org/entity/Q117": {
         "country": "http://www.wikidata.org/entity/Q117",
         "countryLabel": "Гана",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "гана"
     },
     "http://www.wikidata.org/entity/Q774": {
         "country": "http://www.wikidata.org/entity/Q774",
@@ -283,26 +325,30 @@
             "Латинская Америка",
             "Центральная Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "гватемала"
     },
     "http://www.wikidata.org/entity/Q1006": {
         "country": "http://www.wikidata.org/entity/Q1006",
         "countryLabel": "Гвинея",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "гвинея"
     },
     "http://www.wikidata.org/entity/Q1007": {
         "country": "http://www.wikidata.org/entity/Q1007",
         "countryLabel": "Гвинея-Бисау",
         "regionLabel": "Западная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "гвинея-бисау"
     },
     "http://www.wikidata.org/entity/Q183": {
         "country": "http://www.wikidata.org/entity/Q183",
         "countryLabel": "Германия",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "германия"
     },
     "http://www.wikidata.org/entity/Q783": {
         "country": "http://www.wikidata.org/entity/Q783",
@@ -311,7 +357,8 @@
             "Латинская Америка",
             "Центральная Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "гондурас"
     },
     "http://www.wikidata.org/entity/Q219060": {
         "country": "http://www.wikidata.org/entity/Q219060",
@@ -320,7 +367,8 @@
             "Азия",
             "Средний Восток"
         ],
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "государство палестина"
     },
     "http://www.wikidata.org/entity/Q769": {
         "country": "http://www.wikidata.org/entity/Q769",
@@ -329,29 +377,34 @@
             "Малые Антильские острова",
             "Наветренные острова"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "гренада"
     },
     "http://www.wikidata.org/entity/Q41": {
         "country": "http://www.wikidata.org/entity/Q41",
         "countryLabel": "Греция",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "греция"
     },
     "http://www.wikidata.org/entity/Q230": {
         "country": "http://www.wikidata.org/entity/Q230",
         "countryLabel": "Грузия",
         "continentLabel": "Евразия",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "грузия"
     },
     "http://www.wikidata.org/entity/Q35": {
         "country": "http://www.wikidata.org/entity/Q35",
         "countryLabel": "Дания",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "дания"
     },
     "http://www.wikidata.org/entity/Q974": {
         "country": "http://www.wikidata.org/entity/Q974",
         "countryLabel": "Демократическая Республика Конго",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "демократический республика конго"
     },
     "http://www.wikidata.org/entity/Q977": {
         "country": "http://www.wikidata.org/entity/Q977",
@@ -360,7 +413,8 @@
             "Восточная Африка",
             "колонии Франции"
         ],
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "джибути"
     },
     "http://www.wikidata.org/entity/Q784": {
         "country": "http://www.wikidata.org/entity/Q784",
@@ -369,7 +423,8 @@
             "Малые Антильские острова",
             "Наветренные острова"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "доминика"
     },
     "http://www.wikidata.org/entity/Q786": {
         "country": "http://www.wikidata.org/entity/Q786",
@@ -378,12 +433,14 @@
             "Латинская Америка",
             "испанская Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "доминиканский республика"
     },
     "http://www.wikidata.org/entity/Q16150196": {
         "country": "http://www.wikidata.org/entity/Q16150196",
         "countryLabel": "Донецкая Народная Республика",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "донецкий народный республика"
     },
     "http://www.wikidata.org/entity/Q79": {
         "country": "http://www.wikidata.org/entity/Q79",
@@ -393,14 +450,16 @@
             "Северная Африка"
         ],
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "египет"
     },
     "http://www.wikidata.org/entity/Q953": {
         "country": "http://www.wikidata.org/entity/Q953",
         "countryLabel": "Замбия",
         "regionLabel": "Восточная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "замбия"
     },
     "http://www.wikidata.org/entity/Q954": {
         "country": "http://www.wikidata.org/entity/Q954",
@@ -410,14 +469,16 @@
             "Восточная Африка"
         ],
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "зимбабве"
     },
     "http://www.wikidata.org/entity/Q801": {
         "country": "http://www.wikidata.org/entity/Q801",
         "countryLabel": "Израиль",
         "regionLabel": "Средний Восток",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "израиль"
     },
     "http://www.wikidata.org/entity/Q668": {
         "country": "http://www.wikidata.org/entity/Q668",
@@ -427,33 +488,38 @@
             "Содружество наций"
         ],
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "индия"
     },
     "http://www.wikidata.org/entity/Q252": {
         "country": "http://www.wikidata.org/entity/Q252",
         "countryLabel": "Индонезия",
         "regionLabel": "МИКТА",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "индонезия"
     },
     "http://www.wikidata.org/entity/Q810": {
         "country": "http://www.wikidata.org/entity/Q810",
         "countryLabel": "Иордания",
         "regionLabel": "Средний Восток",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "иордания"
     },
     "http://www.wikidata.org/entity/Q796": {
         "country": "http://www.wikidata.org/entity/Q796",
         "countryLabel": "Ирак",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "ирак"
     },
     "http://www.wikidata.org/entity/Q205047": {
         "country": "http://www.wikidata.org/entity/Q205047",
         "countryLabel": "Иракский Курдистан",
         "regionLabel": "Ирак",
-        "continentLabel":"Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "иракский курдистан"
     },
     "http://www.wikidata.org/entity/Q794": {
         "country": "http://www.wikidata.org/entity/Q794",
@@ -462,43 +528,50 @@
             "Средний Восток",
             "Передняя Азия"
         ],
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "иран"
     },
     "http://www.wikidata.org/entity/Q27": {
         "country": "http://www.wikidata.org/entity/Q27",
         "countryLabel": "Ирландия",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "ирландия"
     },
     "http://www.wikidata.org/entity/Q189": {
         "country": "http://www.wikidata.org/entity/Q189",
         "countryLabel": "Исландия",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "исландия"
     },
     "http://www.wikidata.org/entity/Q29": {
         "country": "http://www.wikidata.org/entity/Q29",
         "countryLabel": "Испания",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "испания"
     },
     "http://www.wikidata.org/entity/Q38": {
         "country": "http://www.wikidata.org/entity/Q38",
         "countryLabel": "Италия",
         "regionLabel": "Латинский Союз",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "италия"
     },
     "http://www.wikidata.org/entity/Q805": {
         "country": "http://www.wikidata.org/entity/Q805",
         "countryLabel": "Йемен",
         "regionLabel": "Средний Восток",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "йемен"
     },
     "http://www.wikidata.org/entity/Q423": {
         "country": "http://www.wikidata.org/entity/Q423",
         "countryLabel": "КНДР",
         "regionLabel": "Восточная Азия",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "кндр"
     },
     "http://www.wikidata.org/entity/Q1011": {
         "country": "http://www.wikidata.org/entity/Q1011",
@@ -508,7 +581,8 @@
             "португалоязычные страны Африки"
         ],
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "кабо-верде"
     },
     "http://www.wikidata.org/entity/Q232": {
         "country": "http://www.wikidata.org/entity/Q232",
@@ -518,59 +592,69 @@
             "Восточная Европа"
         ],
         "continentLabel": "Евразия",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "казахстан"
     },
     "http://www.wikidata.org/entity/Q424": {
         "country": "http://www.wikidata.org/entity/Q424",
         "countryLabel": "Камбоджа",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "камбоджа"
     },
     "http://www.wikidata.org/entity/Q1009": {
         "country": "http://www.wikidata.org/entity/Q1009",
         "countryLabel": "Камерун",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "камерун"
     },
     "http://www.wikidata.org/entity/Q16": {
         "country": "http://www.wikidata.org/entity/Q16",
         "countryLabel": "Канада",
         "regionLabel": "Северная Америка",
         "continentLabel": "Северная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "канада"
     },
     "http://www.wikidata.org/entity/Q138837": {
         "country": "http://www.wikidata.org/entity/Q138837",
         "countryLabel": "Каталонская Республика",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "каталонский республика"
     },
     "http://www.wikidata.org/entity/Q846": {
         "country": "http://www.wikidata.org/entity/Q846",
         "countryLabel": "Катар",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "катар"
     },
     "http://www.wikidata.org/entity/Q114": {
         "country": "http://www.wikidata.org/entity/Q114",
         "countryLabel": "Кения",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "кения"
     },
     "http://www.wikidata.org/entity/Q229": {
         "country": "http://www.wikidata.org/entity/Q229",
         "countryLabel": "Кипр",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Евразия"
+        "continentLabel": "Евразия",
+        "countryLabelLemmatized": "кипр"
     },
     "http://www.wikidata.org/entity/Q813": {
         "country": "http://www.wikidata.org/entity/Q813",
         "countryLabel": "Киргизия",
         "continentLabel": "Азия",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "киргизия"
     },
     "http://www.wikidata.org/entity/Q710": {
         "country": "http://www.wikidata.org/entity/Q710",
         "countryLabel": "Кирибати",
         "regionLabel": "Микронезия",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "кирибати"
     },
     "http://www.wikidata.org/entity/Q148": {
         "country": "http://www.wikidata.org/entity/Q148",
@@ -580,29 +664,34 @@
             "Китай"
         ],
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "китайский народный республика"
     },
     "http://www.wikidata.org/entity/Q739": {
         "country": "http://www.wikidata.org/entity/Q739",
         "countryLabel": "Колумбия",
         "regionLabel": "Южная Америка",
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "колумбия"
     },
     "http://www.wikidata.org/entity/Q970": {
         "country": "http://www.wikidata.org/entity/Q970",
         "countryLabel": "Коморы",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "коморы"
     },
     "http://www.wikidata.org/entity/Q756617": {
         "country": "http://www.wikidata.org/entity/Q756617",
         "countryLabel": "Королевство Дании",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "королевство дания"
     },
     "http://www.wikidata.org/entity/Q29999": {
         "country": "http://www.wikidata.org/entity/Q29999",
         "countryLabel": "Королевство Нидерландов",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "королевство нидерланды"
     },
     "http://www.wikidata.org/entity/Q800": {
         "country": "http://www.wikidata.org/entity/Q800",
@@ -611,14 +700,16 @@
             "Латинская Америка",
             "Центральная Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "коста-рика"
     },
     "http://www.wikidata.org/entity/Q1008": {
         "country": "http://www.wikidata.org/entity/Q1008",
         "countryLabel": "Кот-д’Ивуар",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "кот-д’ивуар"
     },
     "http://www.wikidata.org/entity/Q241": {
         "country": "http://www.wikidata.org/entity/Q241",
@@ -627,142 +718,165 @@
             "Латинская Америка",
             "испанская Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "куб"
     },
     "http://www.wikidata.org/entity/Q817": {
         "country": "http://www.wikidata.org/entity/Q817",
         "countryLabel": "Кувейт",
         "regionLabel": "Средний Восток",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "кувейт"
     },
     "http://www.wikidata.org/entity/Q25279": {
         "country": "http://www.wikidata.org/entity/Q25279",
         "countryLabel": "Кюрасао",
         "regionLabel": "Острова ABC",
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "кюрасао"
     },
     "http://www.wikidata.org/entity/Q819": {
         "country": "http://www.wikidata.org/entity/Q819",
         "countryLabel": "Лаос",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "лаос"
     },
     "http://www.wikidata.org/entity/Q211": {
         "country": "http://www.wikidata.org/entity/Q211",
         "countryLabel": "Латвия",
         "regionLabel": "Прибалтика",
         "continentLabel": "Европа",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "латвия"
     },
     "http://www.wikidata.org/entity/Q1013": {
         "country": "http://www.wikidata.org/entity/Q1013",
         "countryLabel": "Лесото",
         "regionLabel": "Южная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "лесото"
     },
     "http://www.wikidata.org/entity/Q1014": {
         "country": "http://www.wikidata.org/entity/Q1014",
         "countryLabel": "Либерия",
         "regionLabel": "Западная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "либерия"
     },
     "http://www.wikidata.org/entity/Q822": {
         "country": "http://www.wikidata.org/entity/Q822",
         "countryLabel": "Ливан",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "ливан"
     },
     "http://www.wikidata.org/entity/Q1016": {
         "country": "http://www.wikidata.org/entity/Q1016",
         "countryLabel": "Ливия",
         "regionLabel": "Северная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "ливия"
     },
     "http://www.wikidata.org/entity/Q37": {
         "country": "http://www.wikidata.org/entity/Q37",
         "countryLabel": "Литва",
         "regionLabel": "Прибалтика",
         "continentLabel": "Европа",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "литва"
     },
     "http://www.wikidata.org/entity/Q347": {
         "country": "http://www.wikidata.org/entity/Q347",
         "countryLabel": "Лихтенштейн",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "лихтенштейн"
     },
     "http://www.wikidata.org/entity/Q16746854": {
         "country": "http://www.wikidata.org/entity/Q16746854",
         "countryLabel": "Луганская Народная Республика",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "луганский народный республика"
     },
     "http://www.wikidata.org/entity/Q32": {
         "country": "http://www.wikidata.org/entity/Q32",
         "countryLabel": "Люксембург",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "люксембург"
     },
     "http://www.wikidata.org/entity/Q1027": {
         "country": "http://www.wikidata.org/entity/Q1027",
         "countryLabel": "Маврикий",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "маврикий"
     },
     "http://www.wikidata.org/entity/Q1025": {
         "country": "http://www.wikidata.org/entity/Q1025",
         "countryLabel": "Мавритания",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "мавритания"
     },
     "http://www.wikidata.org/entity/Q1019": {
         "country": "http://www.wikidata.org/entity/Q1019",
         "countryLabel": "Мадагаскар",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "мадагаскар"
     },
     "http://www.wikidata.org/entity/Q1020": {
         "country": "http://www.wikidata.org/entity/Q1020",
         "countryLabel": "Малави",
         "regionLabel": "Восточная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "малави"
     },
     "http://www.wikidata.org/entity/Q833": {
         "country": "http://www.wikidata.org/entity/Q833",
         "countryLabel": "Малайзия",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "малайзия"
     },
     "http://www.wikidata.org/entity/Q912": {
         "country": "http://www.wikidata.org/entity/Q912",
         "countryLabel": "Мали",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "мали"
     },
     "http://www.wikidata.org/entity/Q826": {
         "country": "http://www.wikidata.org/entity/Q826",
         "countryLabel": "Мальдивы",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "мальдивы"
     },
     "http://www.wikidata.org/entity/Q233": {
         "country": "http://www.wikidata.org/entity/Q233",
         "countryLabel": "Мальта",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "мальта"
     },
     "http://www.wikidata.org/entity/Q1028": {
         "country": "http://www.wikidata.org/entity/Q1028",
         "countryLabel": "Марокко",
         "regionLabel": "Северная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "марокко"
     },
     "http://www.wikidata.org/entity/Q709": {
         "country": "http://www.wikidata.org/entity/Q709",
         "countryLabel": "Маршалловы Острова",
         "regionLabel": "Микронезия",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "маршаллов остров"
     },
     "http://www.wikidata.org/entity/Q96": {
         "country": "http://www.wikidata.org/entity/Q96",
@@ -771,80 +885,93 @@
             "Северная Америка",
             "Латинская Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "мексика"
     },
     "http://www.wikidata.org/entity/Q702": {
         "country": "http://www.wikidata.org/entity/Q702",
         "countryLabel": "Микронезия",
         "regionLabel": "Микронезия",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "микронезия"
     },
     "http://www.wikidata.org/entity/Q1029": {
         "country": "http://www.wikidata.org/entity/Q1029",
         "countryLabel": "Мозамбик",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "мозамбик"
     },
     "http://www.wikidata.org/entity/Q217": {
         "country": "http://www.wikidata.org/entity/Q217",
         "countryLabel": "Молдавия",
         "regionLabel": "Юго-Восточная Европа",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "молдавия"
     },
     "http://www.wikidata.org/entity/Q235": {
         "country": "http://www.wikidata.org/entity/Q235",
         "countryLabel": "Монако",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "монако"
     },
     "http://www.wikidata.org/entity/Q711": {
         "country": "http://www.wikidata.org/entity/Q711",
         "countryLabel": "Монголия",
         "regionLabel": "Восточная Азия",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "монголия"
     },
     "http://www.wikidata.org/entity/Q836": {
         "country": "http://www.wikidata.org/entity/Q836",
         "countryLabel": "Мьянма",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "мьянма"
     },
     "http://www.wikidata.org/entity/Q244165": {
         "country": "http://www.wikidata.org/entity/Q244165",
         "countryLabel": "Нагорно-Карабахская Республика",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "нагорно-карабахский республика"
     },
     "http://www.wikidata.org/entity/Q1030": {
         "country": "http://www.wikidata.org/entity/Q1030",
         "countryLabel": "Намибия",
         "regionLabel": "Южная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "намибия"
     },
     "http://www.wikidata.org/entity/Q697": {
         "country": "http://www.wikidata.org/entity/Q697",
         "countryLabel": "Науру",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "науру"
     },
     "http://www.wikidata.org/entity/Q837": {
         "country": "http://www.wikidata.org/entity/Q837",
         "countryLabel": "Непал",
         "regionLabel": "Южная Азия",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "непал"
     },
     "http://www.wikidata.org/entity/Q1032": {
         "country": "http://www.wikidata.org/entity/Q1032",
         "countryLabel": "Нигер",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "нигер"
     },
     "http://www.wikidata.org/entity/Q1033": {
         "country": "http://www.wikidata.org/entity/Q1033",
         "countryLabel": "Нигерия",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "нигерия"
     },
     "http://www.wikidata.org/entity/Q811": {
         "country": "http://www.wikidata.org/entity/Q811",
@@ -853,7 +980,8 @@
             "Латинская Америка",
             "Центральная Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "никарагуа"
     },
     "http://www.wikidata.org/entity/Q34020": {
         "country": "http://www.wikidata.org/entity/Q34020",
@@ -862,13 +990,15 @@
             "Полинезия",
             "Королевство Новой Зеландии"
         ],
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "ниуэ"
     },
     "http://www.wikidata.org/entity/Q664": {
         "country": "http://www.wikidata.org/entity/Q664",
         "countryLabel": "Новая Зеландия",
         "regionLabel": "Австралазия",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "новый зеландия"
     },
     "http://www.wikidata.org/entity/Q20": {
         "country": "http://www.wikidata.org/entity/Q20",
@@ -877,38 +1007,44 @@
             "Европа",
             "Скандинавия"
         ],
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "норвегия"
     },
     "http://www.wikidata.org/entity/Q878": {
         "country": "http://www.wikidata.org/entity/Q878",
         "countryLabel": "Объединённые Арабские Эмираты",
         "regionLabel": "Средний Восток",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "объединить арабский эмират"
     },
     "http://www.wikidata.org/entity/Q842": {
         "country": "http://www.wikidata.org/entity/Q842",
         "countryLabel": "Оман",
         "regionLabel": "Средний Восток",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "оман"
     },
     "http://www.wikidata.org/entity/Q26988": {
         "country": "http://www.wikidata.org/entity/Q26988",
         "countryLabel": "Острова Кука",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "остров кук"
     },
     "http://www.wikidata.org/entity/Q843": {
         "country": "http://www.wikidata.org/entity/Q843",
         "countryLabel": "Пакистан",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "пакистан"
     },
     "http://www.wikidata.org/entity/Q695": {
         "country": "http://www.wikidata.org/entity/Q695",
         "countryLabel": "Палау",
         "regionLabel": "Микронезия",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "палау"
     },
     "http://www.wikidata.org/entity/Q804": {
         "country": "http://www.wikidata.org/entity/Q804",
@@ -917,12 +1053,14 @@
             "Латинская Америка",
             "Центральная Америка"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "панама"
     },
     "http://www.wikidata.org/entity/Q691": {
         "country": "http://www.wikidata.org/entity/Q691",
         "countryLabel": "Папуа — Новая Гвинея",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "папуа — новый гвинея"
     },
     "http://www.wikidata.org/entity/Q733": {
         "country": "http://www.wikidata.org/entity/Q733",
@@ -931,7 +1069,8 @@
             "Южная Америка",
             "Латинская Америка"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "парагвай"
     },
     "http://www.wikidata.org/entity/Q419": {
         "country": "http://www.wikidata.org/entity/Q419",
@@ -940,7 +1079,8 @@
             "Южная Америка",
             "Латинская Америка"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "перу"
     },
     "http://www.wikidata.org/entity/Q36": {
         "country": "http://www.wikidata.org/entity/Q36",
@@ -950,34 +1090,40 @@
             "Центральная Европа"
         ],
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "польша"
     },
     "http://www.wikidata.org/entity/Q45": {
         "country": "http://www.wikidata.org/entity/Q45",
         "countryLabel": "Португалия",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "португалия"
     },
     "http://www.wikidata.org/entity/Q907112": {
         "country": "http://www.wikidata.org/entity/Q907112",
         "countryLabel": "Приднестровская Молдавская Республика",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "приднестровский молдавский республика"
     },
     "http://www.wikidata.org/entity/Q31354462": {
         "country": "http://www.wikidata.org/entity/Q31354462",
         "countryLabel": "Республика Абхазия",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "республика абхазия"
     },
     "http://www.wikidata.org/entity/Q790": {
         "country": "http://www.wikidata.org/entity/Q790",
         "countryLabel": "Республика Гаити",
         "regionLabel": "Латинская Америка",
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "республика гаити"
     },
     "http://www.wikidata.org/entity/Q971": {
         "country": "http://www.wikidata.org/entity/Q971",
         "countryLabel": "Республика Конго",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "республика конго"
     },
     "http://www.wikidata.org/entity/Q884": {
         "country": "http://www.wikidata.org/entity/Q884",
@@ -986,44 +1132,51 @@
             "Восточная Азия",
             "МИКТА"
         ],
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "республика корея"
     },
     "http://www.wikidata.org/entity/Q1246": {
         "country": "http://www.wikidata.org/entity/Q1246",
         "countryLabel": "Республика Косово",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "республика косово"
     },
     "http://www.wikidata.org/entity/Q23906811": {
         "country": "http://www.wikidata.org/entity/Q23906811",
         "countryLabel": "Республика Логон",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "республика логон"
     },
     "http://www.wikidata.org/entity/Q159": {
         "country": "http://www.wikidata.org/entity/Q159",
         "countryLabel": "Россия",
         "regionLabel": "постсоветское пространство",
         "continentLabel": "Евразия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "россия"
     },
     "http://www.wikidata.org/entity/Q1037": {
         "country": "http://www.wikidata.org/entity/Q1037",
         "countryLabel": "Руанда",
         "regionLabel": "Африканский союз",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "руанда"
     },
     "http://www.wikidata.org/entity/Q218": {
         "country": "http://www.wikidata.org/entity/Q218",
         "countryLabel": "Румыния",
         "regionLabel": "Восточная Европа",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "румыния"
     },
     "http://www.wikidata.org/entity/Q30": {
         "country": "http://www.wikidata.org/entity/Q30",
         "countryLabel": "США",
         "regionLabel": "Северная Америка",
         "continentLabel": "Северная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "сша"
     },
     "http://www.wikidata.org/entity/Q792": {
         "country": "http://www.wikidata.org/entity/Q792",
@@ -1032,65 +1185,76 @@
             "Латинская Америка",
             "Центральная Америка"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "сальвадор"
     },
     "http://www.wikidata.org/entity/Q683": {
         "country": "http://www.wikidata.org/entity/Q683",
         "countryLabel": "Самоа",
         "regionLabel": "Полинезия",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "самоа"
     },
     "http://www.wikidata.org/entity/Q238": {
         "country": "http://www.wikidata.org/entity/Q238",
         "countryLabel": "Сан-Марино",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "сан-марино"
     },
     "http://www.wikidata.org/entity/Q1039": {
         "country": "http://www.wikidata.org/entity/Q1039",
         "countryLabel": "Сан-Томе и Принсипи",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "сан-томе и принсипи"
     },
     "http://www.wikidata.org/entity/Q851": {
         "country": "http://www.wikidata.org/entity/Q851",
         "countryLabel": "Саудовская Аравия",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "саудовский аравия"
     },
     "http://www.wikidata.org/entity/Q40362": {
         "country": "http://www.wikidata.org/entity/Q40362",
         "countryLabel": "Сахарская Арабская Демократическая Республика",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "сахарский арабский демократический республика"
     },
     "http://www.wikidata.org/entity/Q221": {
         "country": "http://www.wikidata.org/entity/Q221",
         "countryLabel": "Северная Македония",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "северный македония"
     },
     "http://www.wikidata.org/entity/Q1042": {
         "country": "http://www.wikidata.org/entity/Q1042",
         "countryLabel": "Сейшельские Острова",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "сейшельский остров"
     },
     "http://www.wikidata.org/entity/Q1041": {
         "country": "http://www.wikidata.org/entity/Q1041",
         "countryLabel": "Сенегал",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "сенегал"
     },
     "http://www.wikidata.org/entity/Q757": {
         "country": "http://www.wikidata.org/entity/Q757",
         "countryLabel": "Сент-Винсент и Гренадины",
         "regionLabel": "Малые Антильские острова",
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "сент-винсент и гренадин"
     },
     "http://www.wikidata.org/entity/Q763": {
         "country": "http://www.wikidata.org/entity/Q763",
         "countryLabel": "Сент-Китс и Невис",
         "regionLabel": "Малые Антильские острова",
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "сент-китс и невис"
     },
     "http://www.wikidata.org/entity/Q760": {
         "country": "http://www.wikidata.org/entity/Q760",
@@ -1099,139 +1263,162 @@
             "Наветренные острова",
             "Малые Антильские острова"
         ],
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "сент-люсия"
     },
     "http://www.wikidata.org/entity/Q403": {
         "country": "http://www.wikidata.org/entity/Q403",
         "countryLabel": "Сербия",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "сербия"
     },
     "http://www.wikidata.org/entity/Q334": {
         "country": "http://www.wikidata.org/entity/Q334",
         "countryLabel": "Сингапур",
         "regionLabel": "Юго-Восточная Азия",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "сингапур"
     },
     "http://www.wikidata.org/entity/Q26273": {
         "country": "http://www.wikidata.org/entity/Q26273",
         "countryLabel": "Синт-Мартен",
         "regionLabel": "Сен-Мартен",
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "синт-мартен"
     },
     "http://www.wikidata.org/entity/Q858": {
         "country": "http://www.wikidata.org/entity/Q858",
         "countryLabel": "Сирия",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "сирия"
     },
     "http://www.wikidata.org/entity/Q214": {
         "country": "http://www.wikidata.org/entity/Q214",
         "countryLabel": "Словакия",
         "regionLabel": "Восточная Европа",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "словакия"
     },
     "http://www.wikidata.org/entity/Q215": {
         "country": "http://www.wikidata.org/entity/Q215",
         "countryLabel": "Словения",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "словения"
     },
     "http://www.wikidata.org/entity/Q685": {
         "country": "http://www.wikidata.org/entity/Q685",
         "countryLabel": "Соломоновы Острова",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "соломонов остров"
     },
     "http://www.wikidata.org/entity/Q1045": {
         "country": "http://www.wikidata.org/entity/Q1045",
         "countryLabel": "Сомали",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "сомали"
     },
     "http://www.wikidata.org/entity/Q34754": {
         "country": "http://www.wikidata.org/entity/Q34754",
         "countryLabel": "Сомалиленд",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "сомалиленд"
     },
     "http://www.wikidata.org/entity/Q1049": {
         "country": "http://www.wikidata.org/entity/Q1049",
         "countryLabel": "Судан",
         "regionLabel": "Северная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "судан"
     },
     "http://www.wikidata.org/entity/Q730": {
         "country": "http://www.wikidata.org/entity/Q730",
         "countryLabel": "Суринам",
         "regionLabel": "Южная Америка",
         "continentLabel": "Южная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "суринам"
     },
     "http://www.wikidata.org/entity/Q1044": {
         "country": "http://www.wikidata.org/entity/Q1044",
         "countryLabel": "Сьерра-Леоне",
         "regionLabel": "Западная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "сьерра-леоне"
     },
     "http://www.wikidata.org/entity/Q863": {
         "country": "http://www.wikidata.org/entity/Q863",
         "countryLabel": "Таджикистан",
         "continentLabel": "Азия",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "таджикистан"
     },
     "http://www.wikidata.org/entity/Q869": {
         "country": "http://www.wikidata.org/entity/Q869",
         "countryLabel": "Таиланд",
         "regionLabel": "Юго-Восточная Азия",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "таиланд"
     },
     "http://www.wikidata.org/entity/Q924": {
         "country": "http://www.wikidata.org/entity/Q924",
         "countryLabel": "Танзания",
         "regionLabel": "Восточная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "танзания"
     },
     "http://www.wikidata.org/entity/Q945": {
         "country": "http://www.wikidata.org/entity/Q945",
         "countryLabel": "Того",
         "regionLabel": "Западная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "тот"
     },
     "http://www.wikidata.org/entity/Q678": {
         "country": "http://www.wikidata.org/entity/Q678",
         "countryLabel": "Тонга",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "тонга"
     },
     "http://www.wikidata.org/entity/Q754": {
         "country": "http://www.wikidata.org/entity/Q754",
         "countryLabel": "Тринидад и Тобаго",
         "regionLabel": "Малые Антильские острова",
         "continentLabel": "Северная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "тринидад и тобаго"
     },
     "http://www.wikidata.org/entity/Q672": {
         "country": "http://www.wikidata.org/entity/Q672",
         "countryLabel": "Тувалу",
-        "continentLabel": "Океания"
+        "continentLabel": "Океания",
+        "countryLabelLemmatized": "тувалу"
     },
     "http://www.wikidata.org/entity/Q948": {
         "country": "http://www.wikidata.org/entity/Q948",
         "countryLabel": "Тунис",
         "regionLabel": "Северная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "тунис"
     },
     "http://www.wikidata.org/entity/Q23681": {
         "country": "http://www.wikidata.org/entity/Q23681",
         "countryLabel": "Турецкая Республика Северного Кипра",
         "regionLabel": "Средний Восток",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "турецкий республика северный кипр"
     },
     "http://www.wikidata.org/entity/Q874": {
         "country": "http://www.wikidata.org/entity/Q874",
         "countryLabel": "Туркмения",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "туркмения"
     },
     "http://www.wikidata.org/entity/Q43": {
         "country": "http://www.wikidata.org/entity/Q43",
@@ -1241,27 +1428,31 @@
             "МИКТА"
         ],
         "continentLabel": "Евразия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "турция"
     },
     "http://www.wikidata.org/entity/Q1036": {
         "country": "http://www.wikidata.org/entity/Q1036",
         "countryLabel": "Уганда",
         "regionLabel": "Восточная Африка",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "уганда"
     },
     "http://www.wikidata.org/entity/Q265": {
         "country": "http://www.wikidata.org/entity/Q265",
         "countryLabel": "Узбекистан",
         "regionLabel": "Центральная Азия",
-        "continentLabel": "Азия"
+        "continentLabel": "Азия",
+        "countryLabelLemmatized": "узбекистан"
     },
     "http://www.wikidata.org/entity/Q212": {
         "country": "http://www.wikidata.org/entity/Q212",
         "countryLabel": "Украина",
         "regionLabel": "Восточная Европа",
         "continentLabel": "Европа",
-        "post_soviet": 1
+        "post_soviet": 1,
+        "countryLabelLemmatized": "украина"
     },
     "http://www.wikidata.org/entity/Q77": {
         "country": "http://www.wikidata.org/entity/Q77",
@@ -1270,20 +1461,23 @@
             "Южная Америка",
             "Латинская Америка"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "уругвай"
     },
     "http://www.wikidata.org/entity/Q712": {
         "country": "http://www.wikidata.org/entity/Q712",
         "countryLabel": "Фиджи",
         "continentLabel": "Океания",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "фиджи"
     },
     "http://www.wikidata.org/entity/Q928": {
         "country": "http://www.wikidata.org/entity/Q928",
         "countryLabel": "Филиппины",
         "regionLabel": "Юго-Восточная Азия",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "филиппина"
     },
     "http://www.wikidata.org/entity/Q33": {
         "country": "http://www.wikidata.org/entity/Q33",
@@ -1293,34 +1487,40 @@
             "Фенноскандия"
         ],
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "финляндия"
     },
     "http://www.wikidata.org/entity/Q142": {
         "country": "http://www.wikidata.org/entity/Q142",
         "countryLabel": "Франция",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "франция"
     },
     "http://www.wikidata.org/entity/Q224": {
         "country": "http://www.wikidata.org/entity/Q224",
         "countryLabel": "Хорватия",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "хорватия"
     },
     "http://www.wikidata.org/entity/Q929": {
         "country": "http://www.wikidata.org/entity/Q929",
         "countryLabel": "Центральноафриканская Республика",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "центральноафриканский республика"
     },
     "http://www.wikidata.org/entity/Q657": {
         "country": "http://www.wikidata.org/entity/Q657",
         "countryLabel": "Чад",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "чад"
     },
     "http://www.wikidata.org/entity/Q236": {
         "country": "http://www.wikidata.org/entity/Q236",
         "countryLabel": "Черногория",
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "черногория"
     },
     "http://www.wikidata.org/entity/Q213": {
         "country": "http://www.wikidata.org/entity/Q213",
@@ -1330,7 +1530,8 @@
             "Центральная Европа"
         ],
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "чехия"
     },
     "http://www.wikidata.org/entity/Q298": {
         "country": "http://www.wikidata.org/entity/Q298",
@@ -1339,23 +1540,27 @@
             "Южная Америка",
             "Латинская Америка"
         ],
-        "continentLabel": "Южная Америка"
+        "continentLabel": "Южная Америка",
+        "countryLabelLemmatized": "чили"
     },
     "http://www.wikidata.org/entity/Q39": {
         "country": "http://www.wikidata.org/entity/Q39",
         "countryLabel": "Швейцария",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "швейцария"
     },
     "http://www.wikidata.org/entity/Q34": {
         "country": "http://www.wikidata.org/entity/Q34",
         "countryLabel": "Швеция",
-        "continentLabel": "Европа"
+        "continentLabel": "Европа",
+        "countryLabelLemmatized": "швеция"
     },
     "http://www.wikidata.org/entity/Q854": {
         "country": "http://www.wikidata.org/entity/Q854",
         "countryLabel": "Шри-Ланка",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "шри-ланка"
     },
     "http://www.wikidata.org/entity/Q736": {
         "country": "http://www.wikidata.org/entity/Q736",
@@ -1365,25 +1570,29 @@
             "Америка"
         ],
         "continentLabel": "Южная Америка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "эквадор"
     },
     "http://www.wikidata.org/entity/Q983": {
         "country": "http://www.wikidata.org/entity/Q983",
         "countryLabel": "Экваториальная Гвинея",
         "continentLabel": "Африка",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "экваториальный гвинея"
     },
     "http://www.wikidata.org/entity/Q986": {
         "country": "http://www.wikidata.org/entity/Q986",
         "countryLabel": "Эритрея",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "эритрея"
     },
     "http://www.wikidata.org/entity/Q1050": {
         "country": "http://www.wikidata.org/entity/Q1050",
         "countryLabel": "Эсватини",
         "regionLabel": "Южная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "эсватиня"
     },
     "http://www.wikidata.org/entity/Q191": {
         "country": "http://www.wikidata.org/entity/Q191",
@@ -1393,13 +1602,15 @@
             "Прибалтика"
         ],
         "continentLabel": "Европа",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "эстония"
     },
     "http://www.wikidata.org/entity/Q115": {
         "country": "http://www.wikidata.org/entity/Q115",
         "countryLabel": "Эфиопия",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "эфиопия"
     },
     "http://www.wikidata.org/entity/Q258": {
         "country": "http://www.wikidata.org/entity/Q258",
@@ -1408,29 +1619,34 @@
             "Южная Африка",
             "БРИКС"
         ],
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "юар"
     },
     "http://www.wikidata.org/entity/Q23427": {
         "country": "http://www.wikidata.org/entity/Q23427",
         "countryLabel": "Южная Осетия",
-        "continentLabel": "Евразия"
+        "continentLabel": "Евразия",
+        "countryLabelLemmatized": "южный осетия"
     },
     "http://www.wikidata.org/entity/Q958": {
         "country": "http://www.wikidata.org/entity/Q958",
         "countryLabel": "Южный Судан",
         "regionLabel": "Восточная Африка",
-        "continentLabel": "Африка"
+        "continentLabel": "Африка",
+        "countryLabelLemmatized": "южный судан"
     },
     "http://www.wikidata.org/entity/Q766": {
         "country": "http://www.wikidata.org/entity/Q766",
         "countryLabel": "Ямайка",
-        "continentLabel": "Северная Америка"
+        "continentLabel": "Северная Америка",
+        "countryLabelLemmatized": "ямайка"
     },
     "http://www.wikidata.org/entity/Q17": {
         "country": "http://www.wikidata.org/entity/Q17",
         "countryLabel": "Япония",
         "regionLabel": "Восточная Азия",
         "continentLabel": "Азия",
-        "post_soviet": 0
+        "post_soviet": 0,
+        "countryLabelLemmatized": "япония"
     }
 }
