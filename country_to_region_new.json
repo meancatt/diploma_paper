@@ -47,7 +47,8 @@
     "http://www.wikidata.org/entity/Q916": {
         "country": "http://www.wikidata.org/entity/Q916",
         "countryLabel": "Ангола",
-        "continentLabel": "Центральная Африка",
+        "continentLabel": "Африка",
+        "regionLabel": "Центральная Африка",
         "countryLabelLemmatized": "ангола"
     },
     "http://www.wikidata.org/entity/Q228": {
@@ -117,7 +118,8 @@
     "http://www.wikidata.org/entity/Q47588": {
         "country": "http://www.wikidata.org/entity/Q47588",
         "countryLabel": "Баскские земли",
-        "continentLabel": "Южная Европа",
+        "regionLabel": "Южная Европа",
+        "continentLabel": "Европа",
         "countryLabelLemmatized": "баскский земля"
     },
     "http://www.wikidata.org/entity/Q398": {
@@ -197,7 +199,7 @@
     "http://www.wikidata.org/entity/Q921": {
         "country": "http://www.wikidata.org/entity/Q921",
         "countryLabel": "Бруней",
-        "regionLabel": "Юго_Восточная Азия"
+        "regionLabel": "Юго-Восточная Азия",
         "continentLabel": "Азия",
         "countryLabelLemmatized": "бруней"
     },
@@ -687,7 +689,8 @@
     "http://www.wikidata.org/entity/Q819": {
         "country": "http://www.wikidata.org/entity/Q819",
         "countryLabel": "Лаос",
-        "continentLabel": "Юго-Восточная Азия",
+        "regionLabel": "Юго-Восточная Азия",
+        "continentLabel": "Азия",
         "countryLabelLemmatized": "лаос"
     },
     "http://www.wikidata.org/entity/Q211": {
@@ -901,6 +904,7 @@
         "country": "http://www.wikidata.org/entity/Q697",
         "countryLabel": "Науру",
         "continentLabel": "Океания",
+        "regionLabel": "Океания",
         "countryLabelLemmatized": "науру"
     },
     "http://www.wikidata.org/entity/Q837": {
@@ -975,6 +979,7 @@
         "country": "http://www.wikidata.org/entity/Q26988",
         "countryLabel": "Острова Кука",
         "continentLabel": "Океания",
+        "regionLabel": "Океания",
         "countryLabelLemmatized": "остров кук"
     },
     "http://www.wikidata.org/entity/Q843": {
@@ -1003,6 +1008,7 @@
         "country": "http://www.wikidata.org/entity/Q691",
         "countryLabel": "Папуа — Новая Гвинея",
         "continentLabel": "Океания",
+        "regionLabel": "Океания",
         "countryLabelLemmatized": "папуа — новый гвинея"
     },
     "http://www.wikidata.org/entity/Q733": {
@@ -1249,6 +1255,7 @@
         "country": "http://www.wikidata.org/entity/Q685",
         "countryLabel": "Соломоновы Острова",
         "continentLabel": "Океания",
+        "regionLabel": "Океания",
         "countryLabelLemmatized": "соломонов остров"
     },
     "http://www.wikidata.org/entity/Q1045": {
@@ -1315,6 +1322,7 @@
         "country": "http://www.wikidata.org/entity/Q678",
         "countryLabel": "Тонга",
         "continentLabel": "Океания",
+        "regionLabel": "Океания",
         "countryLabelLemmatized": "тонга"
     },
     "http://www.wikidata.org/entity/Q754": {
@@ -1329,6 +1337,7 @@
         "country": "http://www.wikidata.org/entity/Q672",
         "countryLabel": "Тувалу",
         "continentLabel": "Океания",
+        "regionLabel": "Океания",
         "countryLabelLemmatized": "тувалу"
     },
     "http://www.wikidata.org/entity/Q948": {
@@ -1356,7 +1365,7 @@
     "http://www.wikidata.org/entity/Q43": {
         "country": "http://www.wikidata.org/entity/Q43",
         "countryLabel": "Турция",
-        "regionLabel": "Средний Восток",
+        "regionLabel": "Ближний Восток",
         "continentLabel": "Евразия",
         "post_soviet": 0,
         "countryLabelLemmatized": "турция"
@@ -1394,6 +1403,7 @@
     "http://www.wikidata.org/entity/Q712": {
         "country": "http://www.wikidata.org/entity/Q712",
         "countryLabel": "Фиджи",
+        "regionLabel": "Океания",
         "continentLabel": "Океания",
         "post_soviet": 0,
         "countryLabelLemmatized": "фиджи"
@@ -1558,6 +1568,7 @@
         "country": "http://www.wikidata.org/entity/Q766",
         "countryLabel": "Ямайка",
         "continentLabel": "Северная Америка",
+        "regionLabel": "Карибский бассейн",
         "countryLabelLemmatized": "ямайка"
     },
     "http://www.wikidata.org/entity/Q17": {
