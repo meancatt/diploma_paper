@@ -196,11 +196,11 @@ def show_top_x_ne(df, x, types):
     return top
 
 # GET STAT BY REGION
-def match_entity_to_country(entity, countries):
+def match_entity_to_country(entity, countries, region_type):
     for country in countries.values():
         country_name = country['countryLabel'].lower()
         country_lemma = country['countryLabelLemmatized']
-        continent = country['continentLabel']
+        region = country[region_type + 'Label']
         wikidata_synonyms = get_json_from_file('wikidata_synonyms.json')
         if ' ' in country_lemma:
             country_lemma_words = country_lemma.split()
@@ -211,19 +211,19 @@ def match_entity_to_country(entity, countries):
         else:
             alternative_country_name = None
         if entity in [country_name, country_lemma, alternative_country_name] or alternative_country_name in entity.split():
-            return country_name.title(), continent
+            return country_name.title(), region
         elif entity in wikidata_synonyms:
             synonyms = wikidata_synonyms[entity]
             for name in [country_name, country_lemma, alternative_country_name]:
                 if name in synonyms:
-                    return country_name.title(), continent   
+                    return country_name.title(), region   
             for synonym in synonyms:
                 if alternative_country_name in synonym.split():
-                    return country_name.title(), continent 
+                    return country_name.title(), region 
 
 
-def get_stat_by_region(df):
-    country_to_region = get_json_from_file('country_to_region.json')
+def get_stat_by_region(df, region_type):
+    country_to_region = get_json_from_file('country_to_region_new.json')
     all_countries = []
     all_regions = []
     for indx, row in df.iterrows():
@@ -237,10 +237,11 @@ def get_stat_by_region(df):
                 if ne != 'no_count':
                     ne = ne.split('|')
                     lemma = ne[3]
-                    match = match_entity_to_country(lemma, country_to_region)
+                    match = match_entity_to_country(lemma, country_to_region, region_type)
                     if match:
                         article_countries.append(match[0])
-                        article_regions.append(match[1])
+                        if match[0] != 'Россия':
+                            article_regions.append(match[1])
         article_countries = list(set(article_countries))
         article_regions = list(set(article_regions))
         all_countries.extend(article_countries)
