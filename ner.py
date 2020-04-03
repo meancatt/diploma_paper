@@ -191,16 +191,23 @@ def get_ne(df, types):
     return top
 
 def show_top_x_ne(df, x, types):
-    top = get_ne(df, types)
-    print(top[:x])
+    ne_num = 0
+    top = dict(get_ne(df, types))
+    for entity, freq in top.items():
+        entity_share = freq / len(df)
+        if entity_share >= x:
+            ne_num += 1
+            print(entity, freq, round(entity_share, 2))
+    print('{} entities are mentioned in more than {}% of all documents.'.format(ne_num, x*100))
     return top
 
 # GET STAT BY REGION
-def match_entity_to_country(entity, countries, region_type):
+def match_entity_to_country(entity, countries):
     for country in countries.values():
         country_name = country['countryLabel'].lower()
         country_lemma = country['countryLabelLemmatized']
-        region = country[region_type + 'Label']
+        region = country['regionLabel']
+        continent = country['continentLabel'] 
         wikidata_synonyms = get_json_from_file('wikidata_synonyms.json')
         if ' ' in country_lemma:
             country_lemma_words = country_lemma.split()
@@ -211,42 +218,49 @@ def match_entity_to_country(entity, countries, region_type):
         else:
             alternative_country_name = None
         if entity in [country_name, country_lemma, alternative_country_name] or alternative_country_name in entity.split():
-            return country_name.title(), region
+            return country_name.title(), region, continent
         elif entity in wikidata_synonyms:
             synonyms = wikidata_synonyms[entity]
             for name in [country_name, country_lemma, alternative_country_name]:
                 if name in synonyms:
-                    return country_name.title(), region   
+                    return country_name.title(), region, continent   
             for synonym in synonyms:
                 if alternative_country_name in synonym.split():
-                    return country_name.title(), region 
+                    return country_name.title(), region, continent 
 
 
-def get_stat_by_region(df, region_type):
+def get_stat_by_region(df):
     country_to_region = get_json_from_file('country_to_region_new.json')
     all_countries = []
     all_regions = []
+    all_continents = []
     for indx, row in df.iterrows():
         print(indx)
         nes = row['named_entities_preprocessed']
         if not pd.isna(nes):
             article_countries = []
             article_regions = []
+            article_continents = []
             nes = nes.split('\n')
             for ne in nes:
                 if ne != 'no_count':
                     ne = ne.split('|')
                     lemma = ne[3]
-                    match = match_entity_to_country(lemma, country_to_region, region_type)
+                    match = match_entity_to_country(lemma, country_to_region)
                     if match:
                         article_countries.append(match[0])
                         if match[0] != 'Россия':
                             article_regions.append(match[1])
+                            article_continents.append(match[2])
         article_countries = list(set(article_countries))
         article_regions = list(set(article_regions))
+        article_continents = list(set(article_continents))
         all_countries.extend(article_countries)
         all_regions.extend(article_regions)
+        all_continents.extend(article_continents)
     countries_stat = sorted(dict(Counter(all_countries)).items(), key=lambda kv: kv[1], reverse=True)
     regions_stat = sorted(dict(Counter(all_regions)).items(), key=lambda kv: kv[1], reverse=True) 
+    continents_stat = sorted(dict(Counter(all_continents)).items(), key=lambda kv: kv[1], reverse=True) 
     print('COUNTRIES TOP:\n', countries_stat, '\n')
-    print('REGIONS TOP:\n', regions_stat)
+    print('REGIONS TOP:\n', regions_stat, '\n')
+    print('CONTINENTS TOP:\n', continents_stat)
