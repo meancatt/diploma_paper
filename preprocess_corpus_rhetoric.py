@@ -1,43 +1,37 @@
 from working_with_files import *
 from preprocessing import *
 import pandas as pd
+mystem = Mystem()
 
-# get the original json
-mfa_texts = get_json_from_file('mfa_texts.json')
-# read speech-only df from file and drop unnecessary columns
-df1 = pd.read_csv('mfa_texts_df.csv', sep = '\t', encoding = 'utf-8')
-for column in ['Unnamed: 0', 'named_entities']:
-    df1 = df1.drop(column, 1)
+# get df with unlemmatized texts
+df = pd.read_csv('mfa_texts_df_rhetoric.csv', sep = '\t', encoding = 'utf-8')
 
-# collect QA data from the original json
-# structure: title | date | category | subheading (=answer) |  text | text_lemmatized (=NaN)
-qa_data = []
-for category, texts in mfa_texts.items():
-    print('Working with category', category)
-    for text in texts:
-        if 'text_blocks' in text:
-            for text_block in text['text_blocks']:
-                if text_block['type'] == 'qa':
-                    row = ([text['title'], text['date'], category, 
-                    text_block['question'], text_block['answer'], float('nan')])
-                    qa_data.append(row)
-
-# save collected QA data to a separate dataframe
-df2 = pd.DataFrame(qa_data, columns = ['title', 'date', 'category', 'subheading', 'text', 'text_lemmatized'])
-
-# concatenate QA and speech-only dataframes into a single dataframe
-df_final = pd.concat([df1, df2])
-
-# save final dataframe to csv file
-df_final.to_csv('mfa_texts_df_rhetoric.csv', sep='\t', encoding='utf-8')
-
-# lemmatize new QA texts in the dataframe using pymorphy
-
-n = 0
+# make list of dicts with ids & raw texts
+texts = []
 for indx, row in df.iterrows():
-    if pd.isna(row['text_lemmatized']): 
-        print('Working with text', n, 'out of 22457')
-        n += 1   
-        df.at[indx, 'text_lemmatized'] = lemmatize_pymorphy(row['text'])
+    text = {}
+    text['id'] = indx
+    text['text'] = row['text']
+    texts.append(text)
 
-update_csv(df, 'mfa_texts_df_rhetoric')
+# lemmatize texts & save lemmas + pos tags to list of dicts
+n = 0
+total = len(texts)
+for text in texts:
+    print('Working with text {} out of {}'.format(n, total))
+    text_elements = mystem.analyze(text['text'])
+    text['lemmas'] = []
+    text['pos_tags'] = []
+    for text_element in text_elements:
+        if 'analysis' in text_element and text_element['analysis'] != []:
+            lex = text_element['analysis'][0]['lex']
+            pos_tag = text_element['analysis'][0]['gr'].split(',')[0].split('=')[0]
+            text['lemmas'].append(lex)
+            text['pos_tags'].append(pos_tag)
+        else:
+            text['lemmas'].append(text_element['text'])
+            text['pos_tags'].append('NO_POS')
+    n += 1
+
+# save data to json 
+write_json_to_file(texts, 'rhetoric_texts_lemmatized.json')
